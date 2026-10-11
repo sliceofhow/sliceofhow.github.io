@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Slice of How</title>
+<meta name="description" content="How the Slice of How channel's private tool, Slice of How Uploader, accesses, stores, shares and deletes data, including data from YouTube API Services. This website collects no personal data.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232B2B2B'/%3E%3Cpath d='M16 48 L48 16 L48 48 Z' fill='%23FF5A1F'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="Slice of How, home"><span>SLICE</span><span class="of">of</span><span>HOW</span></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html" aria-current="page">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+  <article class="prose">
+
+    <p class="eyebrow">Slice of How · Slice of How Uploader</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 11, 2026</p>
+
+    <div class="notice">
+      <strong>Slice of How Uploader uses YouTube API Services.</strong>
+      <ul>
+        <li>Use of the tool is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</li>
+        <li>Google's collection and use of data is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a> (http://www.google.com/policies/privacy).</li>
+        <li>Access can be revoked at any time at <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.</li>
+      </ul>
+    </div>
+
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#api">YouTube API Services</a></li>
+        <li><a href="#accessed">What data is accessed</a></li>
+        <li><a href="#stored">What is stored and where</a></li>
+        <li><a href="#shared">What is shared</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#revoke">How to revoke access</a></li>
+        <li><a href="#google">Google Privacy Policy</a></li>
+        <li><a href="#website">This website</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="who">1. Who we are</h2>
+    <p><a href="https://www.youtube.com/@sliceofhow">Slice of How</a> (@sliceofhow) is a channel of short English videos that explain hidden engineering with 3D cutaway animations. It is run by one individual creator based in South Korea, called “we”, “us” or “the owner” in this policy. You can reach us at the address in <a href="#contact">section 13</a>.</p>
+
+    <h2 id="scope">2. Scope</h2>
+    <p>This policy covers two things:</p>
+    <ul>
+      <li><strong>Slice of How Uploader</strong> (“the tool”), a private command-line program the owner wrote and runs on the owner's own Windows PC to produce the channel's videos and publish them. It has exactly one user, the owner. It is not distributed, sold or offered to anyone else, it has no web server and no user accounts, and it works only with the Slice of How channel.</li>
+      <li><strong>This website</strong>, sliceofhow.github.io.</li>
+    </ul>
+    <p>When you watch our videos on YouTube, YouTube's own privacy practices apply. The tool never receives information that identifies individual viewers.</p>
+
+    <h2 id="api">3. YouTube API Services</h2>
+    <p>Slice of How Uploader uses YouTube API Services: the YouTube Data API v3 and the YouTube Analytics API. By using the tool, its user agrees to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+    <p>The owner authorizes the tool through Google OAuth 2.0 (the desktop-app flow) in the system browser. The tool never sees the Google password. It requests these permissions, all used only for the owner's own channel:</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Permission (scope)</th><th scope="col">Used for</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><code>youtube.upload</code></th><td data-label="Used for">Uploading the owner's videos.</td></tr>
+          <tr><th scope="row"><code>youtube</code></th><td data-label="Used for">Setting the channel's description, keywords, country, language, banner and watermark; creating playlists and adding videos to them.</td></tr>
+          <tr><th scope="row"><code>youtube.readonly</code></th><td data-label="Used for">Reading channel, video and playlist details. This overlaps with the <code>youtube</code> permission.</td></tr>
+          <tr><th scope="row"><code>yt-analytics.readonly</code></th><td data-label="Used for">Reading YouTube Analytics reports for the owner's channel.</td></tr>
+          <tr><th scope="row"><code>yt-analytics-monetary.readonly</code></th><td data-label="Used for">Reading estimated revenue for the owner's videos once it is available. Until then the tool leaves revenue out.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The tool does not request the Google account's email address or profile, or access to any other Google service.</p>
+
+    <h2 id="accessed">4. What data is accessed</h2>
+    <p>Everything the tool accesses belongs to the owner's own channel. It never reads data about any other channel.</p>
+
+    <h3>4.1 Data the tool reads</h3>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Used for</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row">Channel ID and title, subscriber count (and whether it is hidden), total views and number of videos</th>
+            <td data-label="Source"><code>channels.list</code></td>
+            <td data-label="Used for">Confirming the sign-in during setup, and the owner's daily report. Other fields returned with them are ignored and not stored.</td>
+          </tr>
+          <tr>
+            <th scope="row">Current branding settings: description, keywords, country, default language and banner URL, plus the existing title, trailer and analytics-tracking fields</th>
+            <td data-label="Source"><code>channels.list</code></td>
+            <td data-label="Used for">Checking that the signed-in channel is Slice of How, and updating its branding without clearing existing fields. Not stored.</td>
+          </tr>
+          <tr>
+            <th scope="row">Playlist titles and IDs</th>
+            <td data-label="Source"><code>playlists.list</code></td>
+            <td data-label="Used for">Avoiding duplicate playlists and adding each new video to its series playlist.</td>
+          </tr>
+          <tr>
+            <th scope="row">Upload result: the new video's ID, upload status, rejection reason, privacy status and scheduled publish time</th>
+            <td data-label="Source"><code>videos.insert</code> response</td>
+            <td data-label="Used for">Recording each upload and spotting rejected uploads.</td>
+          </tr>
+          <tr>
+            <th scope="row">For the tool's own videos from the last 60 days: publish time, privacy status, scheduled publish time and public counts (views, likes, comments). For the one test clip: upload and processing status.</th>
+            <td data-label="Source"><code>videos.list</code></td>
+            <td data-label="Used for">Confirming that each video went public on schedule, backup numbers when Analytics is unavailable, and checking the test upload.</td>
+          </tr>
+          <tr>
+            <th scope="row">Per-video Analytics for the tool's own videos: engaged views, views, average percentage viewed, average view duration, likes, comments, shares, subscribers gained and, once available, estimated revenue</th>
+            <td data-label="Source">YouTube Analytics API</td>
+            <td data-label="Used for">Tracking performance, the owner's daily report, and choosing future topics (section 6.2).</td>
+          </tr>
+          <tr>
+            <th scope="row">Channel-wide Analytics: daily views, engaged views and minutes watched by content type for the last 365 days, and views by country for the last 28 days</th>
+            <td data-label="Source">YouTube Analytics API</td>
+            <td data-label="Used for">The owner's daily report and YouTube Partner Program progress.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>These are counts and averages. The tool does not read comment text, subscriber lists, messages or search results, or any information that identifies individual viewers.</p>
+
+    <h3>4.2 What the tool changes on the channel</h3>
+    <ul>
+      <li><strong>Uploads</strong> the owner's own videos with a title, description (with source and credit lines and hashtags), tags, category and language. Videos are normally uploaded as private with a scheduled publish time, marked as not made for kids, and marked with YouTube's altered or synthetic content disclosure when they contain AI-generated images or clips.</li>
+      <li><strong>Test upload:</strong> one 6-second unlisted test clip, uploaded without notifying subscribers, to check that uploads publish normally. The owner deletes it in YouTube Studio.</li>
+      <li><strong>Branding:</strong> sets the channel description, keywords, default language and country, uploads the banner image and sets the video watermark.</li>
+      <li><strong>Playlists:</strong> creates public series playlists and adds each new video to one.</li>
+    </ul>
+    <p>The tool does not delete or edit existing videos, post or read comments, or manage subscriptions.</p>
+
+    <h3>4.3 The tool's own calculations</h3>
+    <p>The tool calculates the following itself from the stored numbers. <strong>They are calculated by Slice of How Uploader, not by YouTube, and are not YouTube metrics.</strong> They appear only in the owner's private daily report, in the topic-suggestion request described in <a href="#anthropic">section 6.2</a> and in the tool's local choice of the next video format. They are never published on the channel or anywhere else.</p>
+    <ul>
+      <li>A ranking score: 0.5 × z(average percentage viewed) + 0.3 × z(log of engaged views) + 0.2 × z(subscribers gained), for the channel's own Shorts that are at least 72 hours old and from the last 90 days. A z-value compares a video with the average of the channel's own videos.</li>
+      <li>Per-format averages of these numbers.</li>
+      <li>The share of views from the US, UK, Canada and Australia over the last 28 days.</li>
+      <li>Progress toward the YouTube Partner Program thresholds.</li>
+    </ul>
+    <p>YouTube's numbers are stored as YouTube reports them; these calculations never overwrite them.</p>
+
+    <h2 id="stored">5. What is stored and where</h2>
+    <p>Everything is stored on the owner's PC, in a private data folder in the owner's Windows user account, outside any cloud-synced folder and outside source control. Nothing is stored on a server.</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Item</th><th scope="col">Contents</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row">Google sign-in token</th>
+            <td data-label="Contents">Access and refresh tokens, the granted permissions and their expiry time.</td>
+          </tr>
+          <tr>
+            <th scope="row">Local database: video records</th>
+            <td data-label="Contents">One row per video the tool made: the tool's own topic, script, title, file paths, quality report and cost, plus the YouTube video ID, publish time, status (uploaded or published) and a note if a video stayed private past its scheduled time.</td>
+          </tr>
+          <tr>
+            <th scope="row">Local database: performance history</th>
+            <td data-label="Contents">One row per video per refresh: video ID, time fetched, views, engaged views, likes, comments, shares, subscribers gained, average percentage viewed, average view duration, estimated revenue, and a copy of the API row it came from (with privacy status, publish time and report dates).</td>
+          </tr>
+          <tr>
+            <th scope="row">Daily reports</th>
+            <td data-label="Contents">A private report for the owner, one file per day: channel title and ID, subscriber count, total views and video count, recent Shorts views and watch hours, the top 5 countries by share of views, Partner Program progress, per-video tables (title, link, format, status, metrics, the tool's own ranking score and cost), per-format averages and total estimated revenue.</td>
+          </tr>
+          <tr>
+            <th scope="row">Operational logs</th>
+            <td data-label="Contents">Video IDs and links, upload progress, the test video's ID and privacy status, IDs no longer found on YouTube, row counts, AI service usage and cost, and API error messages.</td>
+          </tr>
+          <tr>
+            <th scope="row">State files</th>
+            <td data-label="Contents">The result of the upload check (test video ID, time, privacy and processing status, any video found stuck as private) and the IDs of the series playlists.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The same folder also holds files with no YouTube data: the tool's own OAuth app credentials, video work folders and manual upload packages. The setup commands print the channel title, ID and subscriber count in the owner's terminal to confirm the sign-in; that output is not saved.</p>
+    <p>All API calls use HTTPS. The data folder is never shared, committed to source control or placed in cloud storage.</p>
+
+    <h2 id="shared">6. What is shared</h2>
+
+    <h3>6.1 Google and YouTube</h3>
+    <p>The uploads and channel changes in section 4.2 are sent to YouTube through YouTube API Services.</p>
+
+    <h3 id="anthropic">6.2 Anthropic (Claude API)</h3>
+    <p>When the tool proposes the next video topic on its own, it asks Anthropic's Claude API for ideas (up to 3 requests per new video, normally 2 videos a day). Once at least one of the channel's own Shorts is more than 72 hours old and has been measured, the request includes a short performance summary built from the stored metrics. That summary contains only:</p>
+    <ul>
+      <li>the number of measured Shorts, the age and time-window rules, and the formula of the tool's own ranking score (section 4.3; calculated by Slice of How Uploader, not a YouTube metric);</li>
+      <li>for up to 5 of the best-scoring and up to 5 of the worst-scoring Shorts by that score: the tool's own topic, format and angle text, the average percentage viewed (rounded), engaged views in short form such as “1.2K” (views when engaged views are unavailable) and subscribers gained;</li>
+      <li>for each video format: the number of videos, the average percentage viewed, the average engaged views and the average of the tool's own ranking score (calculated by Slice of How Uploader, not a YouTube metric).</li>
+    </ul>
+    <p>It does <strong>not</strong> include video IDs, video titles, the channel ID or name, subscriber totals, likes, comments, shares, view duration, revenue, country data, the sign-in token or anything about viewers. No summary is included when the owner chooses the topic. The summary is added automatically; the tool has no setting to turn it off. Its purpose is to steer new topics toward what viewers watch longest. Anthropic handles these requests under its own <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>.</p>
+    <p>The tool also gives formats with a higher average ranking score more weight when it picks the next format. That happens on the owner's PC; nothing is sent.</p>
+
+    <h3>6.3 Other services used to make videos</h3>
+    <p>The tool also uses Anthropic's Claude API (research, scripts and review), SEC EDGAR and FRED (public data), Pexels and Pixabay (stock footage and photo search), and, when enabled, Higgsfield and OpenAI (AI images and clips) and ElevenLabs (voice). They receive only the tool's own topics, prompts, scripts and search terms. None of them receives YouTube API data or the Google sign-in token.</p>
+
+    <h3>6.4 Nothing else</h3>
+    <p>No data is sold, rented or given to advertisers or data brokers. No third party serves content or ads through the tool, and no one other than the owner can see the data it stores.</p>
+
+    <h2 id="retention">7. Retention and deletion</h2>
+    <h3>7.1 How long data is kept</h3>
+    <p>The tool never deletes YouTube data automatically. Each item in section 5 is kept until it is deleted by hand:</p>
+    <ul>
+      <li><strong>Sign-in token:</strong> kept while the tool is in use, and rewritten whenever it is renewed or the owner signs in again.</li>
+      <li><strong>Video records:</strong> one row per video, kept until deleted.</li>
+      <li><strong>Performance history:</strong> each daily run (or on-demand report) adds a new row for every public video published in the last 60 days. Private and scheduled videos are skipped. Older videos are no longer checked, but their rows remain.</li>
+      <li><strong>Reports, logs and state files:</strong> one report and one log per day, kept until deleted.</li>
+    </ul>
+    <p>Video work folders, which hold only the owner's own content, are deleted automatically after 30 days. If access is revoked or the token expires, the tool's API calls fail and it asks the owner to sign in again; stored data is not changed.</p>
+
+    <h3 id="delete">7.2 How data is deleted</h3>
+    <p>The tool has no built-in delete or revoke command, so deletion is done by hand, by removing these items from the data folder:</p>
+    <ul>
+      <li>the sign-in token;</li>
+      <li>the local database (or only its performance-history table);</li>
+      <li>the reports and logs;</li>
+      <li>the state files.</li>
+    </ul>
+    <p>To request deletion, email the address in <a href="#contact">section 13</a>. We delete the stored data within 7 days of a request, and within 7 days after access is revoked. Deleting local data does not remove anything from YouTube; videos, playlists and channel settings stay on the channel and are managed in YouTube Studio.</p>
+
+    <h2 id="revoke">8. How to revoke access</h2>
+    <ol>
+      <li>Open Google's permissions page: <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a> (Google Account &gt; Security &gt; Third-party connections).</li>
+      <li>Select <strong>Slice of How Uploader</strong>.</li>
+      <li>Remove its access.</li>
+    </ol>
+    <p>After that, the stored token stops working and the tool can no longer read or change the channel. To remove the stored data as well, see <a href="#delete">section 7.2</a>.</p>
+
+    <h2 id="google">9. Google Privacy Policy</h2>
+    <p>Because the tool uses YouTube API Services, Google also processes data when the tool calls its APIs. Google's practices are described in the Google Privacy Policy: <a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>.</p>
+
+    <h2 id="website">10. This website</h2>
+    <p>This website collects no personal data and sets no cookies. It is a set of static pages with no scripts, analytics, forms or third-party fonts. It is hosted on GitHub Pages, and GitHub may log technical information such as IP addresses for security, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+
+    <h2 id="children">11. Children</h2>
+    <p>The tool is used only by the owner and is not meant for children. It reads only the owner's own channel data, and this website collects nothing, so neither collects personal information from children. Our videos are made for a general audience and are not marked as made for kids.</p>
+
+    <h2 id="changes">12. Changes to this policy</h2>
+    <p>If the tool starts using data in a new way, we update this policy before the change takes effect and change the “Last updated” date above.</p>
+
+    <h2 id="contact">13. Contact</h2>
+    <p>Questions, complaints or deletion requests: <a href="mailto:bohum.professor@gmail.com">bohum.professor@gmail.com</a>.</p>
+
+  </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="https://www.youtube.com/@sliceofhow">Channel</a></li>
+      </ul>
+    </nav>
+    <p>Slice of How is an independent channel. Slice of How and Slice of How Uploader are not affiliated with, endorsed by or sponsored by YouTube or Google. YouTube is a trademark of Google LLC.</p>
+    <p>Last updated: October 11, 2026</p>
+  </div>
+</footer>
+</body>
+</html>
